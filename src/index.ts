@@ -47,8 +47,6 @@ export function screenshots(
 ): Promise<SnapsResponse> {
   const url = buildUrl(`/screenshots`, auth.config ? auth.config : config);
 
-  console.log(url);
-
   return axios
     .get(url, {
       params: { ...params, api_key: auth.apiKey },

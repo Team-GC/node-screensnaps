@@ -1,6 +1,6 @@
 import { expect, assert } from "chai";
 import { SnapsResponse, SnapStatusResponse } from "../lib/types";
-import * as screencapsIO from "../dist/index";
+import * as screencapsIO from "../dist/src/index";
 require("dotenv").config();
 
 // loading keys from env file
