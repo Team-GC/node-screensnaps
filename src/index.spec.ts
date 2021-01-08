@@ -11,6 +11,7 @@ const keys = {
 
 describe("Checking Config", () => {
   it("checking keys", () => {
+    console.log(keys);
     assert.isObject(keys, "Keys is not an Object");
     assert.isDefined(keys.api_key, "API Key is not defined");
     assert.isDefined(keys.user_id, "User ID is not defined");
