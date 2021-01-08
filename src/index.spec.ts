@@ -29,7 +29,7 @@ describe("Endpoint Tests", () => {
         userId: keys.user_id,
       })
       .then((res: SnapStatusResponse) => {
-        expect(res.status).to.be.an("string");
+        assert.isString(res.status, "status is not string");
       })
       .catch((err) => {
         console.log(err);
@@ -37,9 +37,9 @@ describe("Endpoint Tests", () => {
           assert.fail(
             0,
             1,
-            `FAIL: ${err.response.path} - ${
-              err.response.status
-            } - ${JSON.stringify(err.response.data)}`
+            `FAIL: ${err.response.status} - ${JSON.stringify(
+              err.response.data
+            )}`
           );
         }
       });
@@ -55,8 +55,8 @@ describe("Endpoint Tests", () => {
         { offset: 0, limit: 15 }
       )
       .then((res: SnapsResponse) => {
-        expect(res.items).to.be.an("array");
-        expect(res.status).to.be.an("string");
+        assert.isArray(res.items, "`res.items` is not an array");
+        assert.isString(res.status, "`res.status` is not an string");
       })
       .catch((err) => {
         console.log(err);
@@ -64,9 +64,9 @@ describe("Endpoint Tests", () => {
           assert.fail(
             0,
             1,
-            `FAIL: ${err.response.path} - ${
-              err.response.status
-            } - ${JSON.stringify(err.response.data)}`
+            `FAIL: ${err.response.status} - ${JSON.stringify(
+              err.response.data
+            )}`
           );
         }
       });
