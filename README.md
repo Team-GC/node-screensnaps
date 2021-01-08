@@ -16,11 +16,11 @@ To get stared, you'll need an `api_key` and `user_id` to make requests, you can 
 
 ## Initializing the Library
 
-`const screencapsIO = require('node-screensnaps')`
+`const screensnapsIO = require('node-screensnaps')`
 
 OR
 
-`import * as screencapsIO from "node-screensnaps"`;
+`import * as screensnapsIO from "node-screensnaps"`;
 
 ## Methods
 
@@ -28,14 +28,14 @@ Refer to the documentation on https://screensnaps.io/docs/intro on how to make c
 
 ## Promises
 
-By default, this library uses promises, you can involk them as via `await`, but remember to handle your own errors via `try / catch`. Example below use `async/await`, however can be written as a true promise.
+By default, this library uses promises, you can invoke them as via `await`, but remember to handle your own errors via `try / catch`. Example below use `async/await`, however can be written as a true promise.
 
 ### `screenshots`
 
 This will get the last 15 screenshots on your account.
 
 ```
-const snaps = await screencapsIO.screenshots({
+const snaps = await screensnapsIO.screenshots({
     userId: "USER_ID"
     apiKey: "API_KEY"
 });
@@ -46,7 +46,7 @@ const snaps = await screencapsIO.screenshots({
 This will take a screenshot to a URL or HTML depending on your params
 
 ```
-const snap = await screencapsIO.screenshot({
+const snap = await screensnapsIO.screenshot({
     userId: "USER_ID"
     apiKey: "API_KEY"
 }, {
@@ -61,7 +61,7 @@ See https://screensnaps.io/docs/api-post-screenshot for additional parameters.
 This is a ping to let you know the status of the service.
 
 ```
-const status = await screencapsIO.status({
+const status = await screensnapsIO.status({
     userId: "USER_ID"
     apiKey: "API_KEY"
 });

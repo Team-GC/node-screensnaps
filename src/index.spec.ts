@@ -1,6 +1,6 @@
 import { expect, assert } from "chai";
 import { SnapsResponse, SnapStatusResponse } from "../lib/types";
-import * as screencapsIO from "../dist/src/index";
+import * as screensnapsIO from "../dist/src/index";
 require("dotenv").config();
 
 // loading keys from env file
@@ -11,7 +11,6 @@ const keys = {
 
 describe("Checking Config", () => {
   it("checking keys", () => {
-    console.log(keys);
     assert.isObject(keys, "Keys is not an Object");
     assert.isDefined(keys.api_key, "API Key is not defined");
     assert.isDefined(keys.api_key, "API Key is not defined");
@@ -23,7 +22,7 @@ describe("Checking Config", () => {
 
 describe("Endpoint Tests", () => {
   it("checking /status", () => {
-    return screencapsIO
+    return screensnapsIO
       .status({
         apiKey: keys.api_key,
         userId: keys.user_id,
@@ -46,7 +45,7 @@ describe("Endpoint Tests", () => {
   });
 
   it("checking /screenshots", () => {
-    return screencapsIO
+    return screensnapsIO
       .screenshots(
         {
           apiKey: keys.api_key,
