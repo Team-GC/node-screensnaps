@@ -9,12 +9,8 @@ export interface AuthParams {
   config?: Configuration;
 }
 export interface SnapParams {
-  // The URL of the page you want screenshot
   url?: string;
-
-  // The HTML if you would rather have HTML parsed to an image than URL
   html?: string;
-
   height?: number;
   width?: number;
   pageTarget?: string;
@@ -26,6 +22,17 @@ export interface SnapParams {
 export interface SnapResponse {
   status: string;
   image_url: string;
+  metrics?: ScreenshotMetric;
+}
+
+export interface ScreenshotMetric {
+  launch: number;
+  browser: number;
+  page: number;
+  screenshot: number;
+  target: number;
+  upload: number;
+  total: number;
 }
 
 export interface SnapsParams {
