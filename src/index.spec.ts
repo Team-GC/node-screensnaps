@@ -14,7 +14,10 @@ describe("Checking Config", () => {
     console.log(keys);
     assert.isObject(keys, "Keys is not an Object");
     assert.isDefined(keys.api_key, "API Key is not defined");
+    assert.isDefined(keys.api_key, "API Key is not defined");
     assert.isDefined(keys.user_id, "User ID is not defined");
+    assert.isNotEmpty(keys.api_key, "API Key is Empty");
+    assert.isNotEmpty(keys.user_id, "API Key is Empty");
   });
 });
 
