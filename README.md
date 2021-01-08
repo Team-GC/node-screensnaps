@@ -16,7 +16,7 @@ To get stared, you'll need an `api_key` and `user_id` to make requests, you can 
 
 ## Initializing the Library
 
-`const screenscaps = require('node-screensnaps')`
+`const screencapsIO = require('node-screensnaps')`
 
 OR
 
