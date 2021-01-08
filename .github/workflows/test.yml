@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: 10
       - run: npm install
-      - run: npm build
-      - run: npm test
+      - run: npm run build
+      - run: npm run test
         env:
           API_KEY: ${{ secrets.API_KEY }}
           USER_ID: ${{ secrets.USER_ID }}
