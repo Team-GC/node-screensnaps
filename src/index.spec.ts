@@ -11,8 +11,9 @@ const keys = {
 
 describe("Checking Config", () => {
   it("checking keys", () => {
-    expect(keys.api_key).to.be.an("string");
-    expect(keys.user_id).to.be.an("string");
+    assert.isObject(keys, "Keys is not an Object");
+    assert.isDefined(keys.api_key, "API Key is not defined");
+    assert.isDefined(keys.user_id, "User ID is not defined");
   });
 });
 
