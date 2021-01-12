@@ -36,7 +36,7 @@ This will get the last 15 screenshots on your account.
 
 ```js
 const snaps = await screensnapsIO.screenshots({
-    userId: "USER_ID"
+    userId: "USER_ID",
     apiKey: "API_KEY"
 });
 ```
@@ -47,7 +47,7 @@ This will take a screenshot to a URL or HTML depending on your params
 
 ```js
 const snap = await screensnapsIO.screenshot({
-    userId: "USER_ID"
+    userId: "USER_ID",
     apiKey: "API_KEY"
 }, {
     url: "https://google.com"
@@ -62,7 +62,7 @@ This is a ping to let you know the status of the service.
 
 ```js
 const status = await screensnapsIO.status({
-    userId: "USER_ID"
+    userId: "USER_ID",
     apiKey: "API_KEY"
 });
 ```
