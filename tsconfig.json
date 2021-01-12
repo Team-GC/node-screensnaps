@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "types": [ "node" ],
+      "types": [ "node", "mocha"],
     "target": "es2015",
       "module": "commonjs",
       "declaration": true,
