@@ -34,7 +34,7 @@ By default, this library uses promises, you can invoke them as via `await`, but 
 
 This will get the last 15 screenshots on your account.
 
-```
+```js
 const snaps = await screensnapsIO.screenshots({
     userId: "USER_ID"
     apiKey: "API_KEY"
@@ -45,7 +45,7 @@ const snaps = await screensnapsIO.screenshots({
 
 This will take a screenshot to a URL or HTML depending on your params
 
-```
+```js
 const snap = await screensnapsIO.screenshot({
     userId: "USER_ID"
     apiKey: "API_KEY"
@@ -60,7 +60,7 @@ See https://screensnaps.io/docs/api-post-screenshot for additional parameters.
 
 This is a ping to let you know the status of the service.
 
-```
+```js
 const status = await screensnapsIO.status({
     userId: "USER_ID"
     apiKey: "API_KEY"
@@ -71,7 +71,7 @@ const status = await screensnapsIO.status({
 
 You can run `npm run test` to run then test. Make sure to create a local `.env` file with the contents of:
 
-```
+```bash
 USER_ID=XXXX
 API_KEY=XXXX
 ```
