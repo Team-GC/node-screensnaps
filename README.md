@@ -1,6 +1,6 @@
 # node-screensnaps
 
-![Build](https://github.com/Team-GC/mode-screensnaps/workflows/test/badge.svg)
+![Build](https://github.com/Team-GC/node-screensnaps/workflows/test/badge.svg)
 
 A simple NodeJS library to interact with the APIs for screenshot generation on screensnaps.io. **Please note that this library requires a back-end server (nodejs), as screensnaps.io does not support CORS from the client side.**
 
