@@ -1,6 +1,6 @@
 # node-screensnaps
 
-![Build](https://github.com/Team-GC/node-screensnaps/workflows/CI/badge.svg)
+![Build](https://github.com/Team-GC/node-screensnaps/workflows/npm-deploy/badge.svg)
 
 A simple NodeJS library to interact with the APIs for screenshot generation on screensnaps.io. **Please note that this library requires a back-end server (nodejs), as screensnaps.io does not support CORS from the client side.**
 
@@ -18,11 +18,15 @@ To get stared, you'll need an `api_key` and `user_id` to make requests, you can 
 
 ## Initializing the Library
 
-`const screensnapsIO = require('node-screensnaps')`
+```js
+const screensnapsIO = require('node-screensnaps')
+```
 
 OR
 
-`import * as screensnapsIO from "node-screensnaps"`;
+```js
+import * as screensnapsIO from "node-screensnaps"
+```
 
 ## Methods
 
